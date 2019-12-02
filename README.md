@@ -1,24 +1,5 @@
-# task-board
+# Task Board
+Менеджер задач написанный на Vue.js, задачи удобно разделяются на группы: "Необходимо сделать", "В работе" и "Готово". Также есть возможность установка срока выполнения задачи, добавления тегов и описания к задачам.  
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Использованные технологии и инструменты:
+HTML, CSS, JS, Vue.js, Vue CLI, Vue Router, Vuex, SCSS 
