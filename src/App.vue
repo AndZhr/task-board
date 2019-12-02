@@ -1,32 +1,45 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Navbar />
+    <div class="container">
+      <div class="main">
+        <router-view/>
+      </div>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import Navbar from "@/components/Navbar"
+export default {
+  components: {
+    Navbar
   }
+}
+</script>
+
+<style lang="scss">
+@import "../public/reset.css";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
+
+$red-pear: #7B3638; //text: milk-tooth
+$carmine-pink: #E54B49; //text: red-pear
+$milk-tooth: #FAEBD6; //text: carmine-pink
+$emerald-wave: #52ADA2; //text: milk-tooth
+
+#app {
+  font-family: "PT Sans", sans-serif;
+  color: #333;
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.main {
+  padding: 30px 0;
+}
+.page-title {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 </style>
